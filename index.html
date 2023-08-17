@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/checked.png">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="ps-gen">
+            <h1 class="title">Password <span>Generator</span></h1>
+            <div class="ps-output">
+                <input type="text" id="password" readonly>
+                <img id="copy" src="img/copy.png" alt="copy">
+            </div>
+
+            <div class="length">
+                <p>Password Length:</p>
+                <input id="ps-length" type="number" value="16">
+            </div>
+
+            <div class="include">
+                <label class="checkbox">Include Uppercase
+                    <input type="checkbox" id="uppercase" checked="true">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Include Lowercase
+                    <input type="checkbox" id="lowercase" checked="true">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Include Numbers
+                    <input type="checkbox" id="number">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Include Symbols & Characters
+                    <input type="checkbox" id="symbols">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <button id="generate">Generate</button>
+        </div>
+
+        <p class="footer">Made with ❤️️ by John Florence Batol </p>
+    </div>
+</body>
+</html>
